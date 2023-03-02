@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>User page</title>
+</head>
+<body>
+    <div class="box-container" id="box-container">
+        <div>
+            <button type="button" id="signOut" class="signOut" ><a href="home.html">&#8249 Previous</a></button>
+        </div>
+        <div id="profile-pic">
+            <img src="./Resources/user.png" alt="profile pic" id="profilePic">
+        </div>
+        <div id="textBox" class="textBox">
+           <i class="glyphicon glyphicon-envelope" id="envelop">
+            <input type="email" id="email" class="emailuser" placeholder="Email ID" required>
+           </i>
+           <i class="glyphicon glyphicon-lock">
+            <input type="password" id="passworduser" class="password" placeholder="Password">
+           </i>
+           <i class="glyphicon glyphicon-lock">
+            <input type="password" id="password2" class="password" placeholder="Re enter Password">
+           </i>
+            
+           
+        </div>
+        <div class="textFeild">
+            <div id="checkText">
+                <input type="checkbox" id="checkbox">
+                <p id="rememberMe">Remember me</p>
+            </div>
+        </div>
+        <div id="button">
+            <button type="submit" id="login" onclick="saveEmail()">Login</button>
+        </div>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html>
